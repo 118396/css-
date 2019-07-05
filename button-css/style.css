@@ -1,0 +1,47 @@
+.weissButton {
+    box-sizing: border-box;
+    display: inline-block;
+    background: none;
+    border: none;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.5s;
+    position: relative;
+    background: blue;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.weissButton:hover {
+    background: #e5e5e5;
+}
+
+.weissButton:focus {
+    outline: none;
+    background: #e5e5e5;
+}
+
+.weissButton .circle {
+    position: absolute;
+    border: 1px solid red;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    margin-left: -5px;
+    margin-top: -5px;
+    transition: transform 0.5s;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.weissButton>.circle.active {
+    transform: scale(10);
+    visibility: visible;
+}
