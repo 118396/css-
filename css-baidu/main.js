@@ -5,4 +5,4 @@ keyword.oninput = function(e){
     }else{
       suggestion.classList.remove('active')
     }
-  }
+}
